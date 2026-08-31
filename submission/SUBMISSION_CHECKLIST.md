@@ -1,0 +1,21 @@
+# Submission Checklist
+
+- [ ] Create a new repository for RepoMedic.
+- [ ] Commit this source tree.
+- [ ] Set `GOOGLE_CLOUD_PROJECT`.
+- [ ] Set `GEMINI_API_KEY`.
+- [ ] Run `python validate.py`.
+- [ ] Deploy with `./deploy.sh`.
+- [ ] Open the public Cloud Run URL.
+- [ ] Confirm `/api/health` reports the expected model and Cloud Run service.
+- [ ] Click **Run repair agent** and confirm the before tests fail and after tests pass.
+- [ ] Record an unedited live proof-of-action segment.
+- [ ] Show Cloud Run / `.run.app` evidence in the video.
+- [ ] Upload video to YouTube or Vimeo with public judging access.
+- [ ] Add repository URL to Devpost.
+- [ ] Upload/include `ARCHITECTURE.svg`.
+- [ ] Paste/edit `DEVPOST.md` into the submission.
+- [ ] Disclose AI coding assistance as required.
+- [ ] Verify links while logged out/incognito.
+- [ ] Submit before the competition deadline.
+- [ ] Freeze the submitted repo/video/live service during judging.

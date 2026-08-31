@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>RepoMedic — Evidence-Driven Repair Agent</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<main class="shell">
+  <header>
+    <div class="eyebrow">ALL THINGS AGENTIC • TASKMASTER</div>
+    <h1>RepoMedic</h1>
+    <p class="lead">An evidence-driven repair agent that runs a failing repository, asks Gemini to choose a grounded repair, applies it, and proves the result by running the tests again.</p>
+  </header>
+
+  <section class="panel status">
+    <div>
+      <span class="label">Runtime</span>
+      <strong id="runtime">checking…</strong>
+    </div>
+    <div>
+      <span class="label">Model</span>
+      <strong id="model">checking…</strong>
+    </div>
+    <div>
+      <span class="label">Agent SDK</span>
+      <strong>Google GenAI SDK</strong>
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Live proof of action</h2>
+    <p>The bundled demo repository contains a real failing unit test. RepoMedic executes it, constructs candidate patches, lets Gemini select the evidence-supported repair, applies it in an isolated workspace, then runs the tests again.</p>
+    <button id="run">Run repair agent</button>
+  </section>
+
+  <section id="progress" class="panel hidden">
+    <h2>Agent trace</h2>
+    <ol id="actions"></ol>
+  </section>
+
+  <section id="result" class="panel hidden">
+    <div class="result-head">
+      <h2>Repair report</h2>
+      <span id="badge"></span>
+    </div>
+    <h3>Diagnosis</h3>
+    <p id="diagnosis"></p>
+    <h3>Gemini's decision</h3>
+    <p id="reason"></p>
+    <h3>Applied patch</h3>
+    <pre id="diff"></pre>
+    <div class="grid">
+      <div>
+        <h3>Before</h3>
+        <pre id="before"></pre>
+      </div>
+      <div>
+        <h3>After</h3>
+        <pre id="after"></pre>
+      </div>
+    </div>
+  </section>
+
+  <footer>Gemini 3.5 Flash • Google GenAI SDK • Google Cloud Run</footer>
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>

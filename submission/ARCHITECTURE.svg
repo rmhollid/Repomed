@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="720" viewBox="0 0 1200 720">
+<rect width="1200" height="720" fill="#0c0e11"/>
+<style>
+text{font-family:Arial,sans-serif;fill:#edf0f2}.title{font-size:42px;font-weight:700}
+.label{font-size:24px;font-weight:700}.small{font-size:18px;fill:#aeb7be}
+.box{fill:#151a1f;stroke:#4b5660;stroke-width:2}.arrow{stroke:#dbe1e5;stroke-width:4;fill:none}
+</style>
+<text x="70" y="75" class="title">RepoMedic — Agentic Repair Architecture</text>
+<rect x="70" y="160" width="250" height="130" rx="18" class="box"/>
+<text x="115" y="215" class="label">Browser UI</text>
+<text x="96" y="253" class="small">Run + evidence trace</text>
+
+<rect x="465" y="135" width="300" height="180" rx="18" class="box"/>
+<text x="535" y="195" class="label">Cloud Run</text>
+<text x="515" y="235" class="small">RepoMedic Flask service</text>
+<text x="505" y="270" class="small">isolated repair workspace</text>
+
+<rect x="865" y="160" width="265" height="130" rx="18" class="box"/>
+<text x="915" y="215" class="label">Gemini 3.5</text>
+<text x="900" y="253" class="small">Google GenAI SDK</text>
+
+<rect x="340" y="440" width="520" height="170" rx="18" class="box"/>
+<text x="445" y="495" class="label">Deterministic Repair Tools</text>
+<text x="385" y="535" class="small">run tests → capture failure → candidates</text>
+<text x="392" y="570" class="small">apply selected patch → rerun tests → report</text>
+
+<path d="M320 225 L465 225" class="arrow"/>
+<polygon points="465,225 445,213 445,237" fill="#dbe1e5"/>
+<path d="M765 225 L865 225" class="arrow"/>
+<polygon points="865,225 845,213 845,237" fill="#dbe1e5"/>
+<path d="M615 315 L615 440" class="arrow"/>
+<polygon points="615,440 603,420 627,420" fill="#dbe1e5"/>
+
+<text x="72" y="675" class="small">Proof of action: a failing repository becomes a passing repository, and the complete evidence is shown.</text>
+</svg>
